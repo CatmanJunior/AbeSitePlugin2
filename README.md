@@ -1,11 +1,11 @@
 # Database Array Builder for Wordpress Plugin
-
+OVERENGINEERD!!
 This project is a Python-based web scraper that generates PHP array gallery settings for a wordpress plugin. I had to transfer 700+ images from one gallery plugin to the other. 
 Manually this would've taken me a week.
 BONUS: I get to exceed the limit on maximum filters this way. 
 
 ## Installation
-
+ 
 1. Clone the repository.
 2. Install the required dependencies by running `pip install -r requirements.txt`.
 
@@ -17,7 +17,8 @@ BONUS: I get to exceed the limit on maximum filters this way.
 4. The gallery settings will be serialized and written to a `php_array_gallery_settings.txt` file.
 5. The filter settings will be serialized and written to a `filter_php_array.txt` file
 6. A Markdown file named `first_elements.md` will be generated, containing a table with information about the first elements, filters, and counts. This is to check if all the data is correctly parsed. 
-7. Add the content of the 2 txt files to the database.
+7. Add the content of the 2 txt files to the database. Goto PHPmyAdmin
+8. Search in Options(the pf_gallery_options) and PostMeta (the number of the gallery)
    
 ## Additional Notes
 

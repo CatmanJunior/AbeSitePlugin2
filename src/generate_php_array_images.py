@@ -1,5 +1,4 @@
 import phpserialize
-import scraper
 
 def create_pf_gallery_settings(image_ids, filter_ids) -> dict[str, str]:
     length = len(image_ids)

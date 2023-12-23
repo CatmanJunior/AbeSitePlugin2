@@ -43,9 +43,6 @@ truncated_image_ids = IMAGE_ID_LIST[:LENGTH_OF_ARRAY]
 gallery_settings = create_pf_gallery_settings(truncated_image_ids, filter_ids)
 gallery_settings_array = serialize_dictionary(gallery_settings)
 
-
-
-
 # Writing to Markdown file
 with open("first_elements.md", "w") as file:
     #also add cleaned content
