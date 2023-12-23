@@ -19,30 +19,22 @@ def generate_filter_ids(filterList, filter_ids):
         filterList (list): A list of filters.
 
     Returns:
-        None
+        mapped_filters (list): A list of mapped filter IDs.
     """
     filter_ids.insert(0, "all")
     filter_ids.append("Overig")
     filterarray = generate_filter_string(filter_ids)
-    #write to txt
-    with open("filter_php_array.txt", "wb") as f:
-        f.write(filterarray.encode())
     
-    #map filterids to a dictionary with numerical keys
-    filter_ids = {i: filter for i, filter in enumerate(filter_ids)}
-    print("filter ids: ", filter_ids)
+    # Write filterarray to a text file
+    with open("filter_php_array.txt", "w") as f:
+        f.write(filterarray)
     
+    # Create a dictionary to map filter IDs to numerical keys
+    filter_ids_dict = {i: filter for i, filter in enumerate(filter_ids)}
+    print("filter ids: ", filter_ids_dict)
     
-    # Map the filters to their corresponding IDs if they dont exist put them in the "Overig" category
-    mapped_filters = []
-    for filter in filterList:
-        if filter in filter_ids.values():
-            for key, value in filter_ids.items():
-                if filter == value:
-                    mapped_filters.append(key)
-                    break
-        else:
-            mapped_filters.append(len(filter_ids) - 1)
-    print("mapped filters: ", mapped_filters)
+    mapped_filters = [filter_ids_dict.get(filter, len(filter_ids_dict) - 1) for filter in filterList]
+
+    
     return mapped_filters
 

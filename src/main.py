@@ -1,5 +1,6 @@
 
 from calendar import calendar as cal
+import os
 from content_parser import (
     categorize_elements, 
     clean_elements, 
@@ -29,26 +30,33 @@ if isinstance(http_response, str):  # Check for an error response
 parsed_content = parse_content_by_class(http_response, CLASS_NAME)
 cleaned_content = clean_elements(parsed_content)
 first_elements = get_first_part_element_from_list(cleaned_content)
+filtered_elements = first_elements[:LENGTH_OF_ARRAY]
 
-element_frequencies = count_element_frequencies(first_elements)
+element_frequencies = count_element_frequencies(filtered_elements)
 elements_above_threshold, elements_below_threshold = categorize_elements(element_frequencies, FILTER_THRESHOLD)
 
 print(f"Elements with more than {FILTER_THRESHOLD} occurrences: {elements_above_threshold}")
 
 # Filter and image ID processing
-filtered_elements = first_elements[:LENGTH_OF_ARRAY]
 filter_ids = generate_filter_ids(filtered_elements, elements_above_threshold)
 truncated_image_ids = IMAGE_ID_LIST[:LENGTH_OF_ARRAY]
 
 gallery_settings = create_pf_gallery_settings(truncated_image_ids, filter_ids)
-gallery_settings_array = serialize_dictionary(gallery_settings)
+
 
 # Writing to Markdown file
-with open("first_elements.md", "w") as file:
-    #also add cleaned content
+output_folder = "output"
+output_file = "output.md"
+output_path = os.path.join(output_folder, output_file)
+
+with open(output_path, "w") as file:
+    file.write("## Filter Counts\n")
+    for item, count in element_frequencies.most_common():
+        file.write(f"* {item}: {count}\n")
+
     file.write("## First elements\n")
     file.write("| Image ID | Filter | Full String | Filter ID | Count |\n")
-    file.write("| ------- | ------- | ----------- | --------- | ----- |\n")    
+    file.write("| -------- | ------ | ----------- | --------- | ----- |\n")    
 
     freq = [element_frequencies[element] for element in first_elements]
     for img_id, element, cleaned_content, element_id, count in zip(truncated_image_ids, filtered_elements, cleaned_content, filter_ids, freq):
@@ -60,7 +68,5 @@ with open("first_elements.md", "w") as file:
             assert element in elements_below_threshold
             assert element_id == len(elements_above_threshold) - 1
 
-# Writing PHP array settings
-with open("php_array_gallery_settings.txt", "w") as file:
-    file.write(gallery_settings_array)
+
 

@@ -1,6 +1,11 @@
+## Filter Counts
+* Amsterdam: 22
+* Amersfoort: 19
+* Abcoude: 6
+* Alkmaar: 3
 ## First elements
 | Image ID | Filter | Full String | Filter ID | Count |
-| ------- | ------- | ----------- | --------- | ----- |
+| -------- | ------ | ----------- | --------- | ----- |
 | 8158 | Abcoude | Abcoude, Cosmas en Damianuskerk (Alfred Tepe 1888) | 1 | 6 |
 | 8159 | Abcoude | Abcoude, Dorpskerk (koorhek 1542) | 1 | 6 |
 | 8164 | Abcoude | Abcoude, Dorpskerk (Koorhek 1542) | 1 | 6 |
@@ -29,25 +34,25 @@
 | 8261 | Amersfoort | Amersfoort, Stadsring 244 (1907) | 3 | 19 |
 | 9156 | Amersfoort | Amersfoort, Westsingel 50 (Flehite – Memorietafel van de familie van Schayck ca. 1530) | 3 | 19 |
 | 8264 | Amersfoort | Amersfoort, Willem van Mechelenstraat 3-7, 17 F. van Blanckenheymstraat 10, Hendrik van Viandenstraat 38, Stadsring 87-91 | 3 | 19 |
-| 8178 | Amsterdam | Amsterdam. Amstel 41 (19e E) | 4 | 111 |
-| 8190 | Amsterdam | Amsterdam, Begijnhof (1574) | 4 | 111 |
-| 8189 | Amsterdam | Amsterdam, Begijnhof (1574) | 4 | 111 |
-| 2164 | Amsterdam | Amsterdam: Stationsgebouw | 4 | 111 |
-| 2163 | Amsterdam | Amsterdam: Prins Hendrikkade 22 | 4 | 111 |
-| 2162 | Amsterdam | Amsterdam: Prinsengracht 173 | 4 | 111 |
-| 2161 | Amsterdam | Amsterdam: Prinsengracht 173 | 4 | 111 |
-| 2160 | Amsterdam | Amsterdam: Prins Hendrikkade 21 (1883) | 4 | 111 |
-| 2159 | Amsterdam | Amsterdam: Prins Hendrikkade 21 (1883) | 4 | 111 |
-| 1701 | Amsterdam | Amsterdam: Centraal Station Grand Café | 4 | 111 |
-| 1700 | Amsterdam | Amsterdam: Centraal Station Grand Café | 4 | 111 |
-| 1702 | Amsterdam | Amsterdam: Centraal Station Grand Café | 4 | 111 |
-| 1703 | Amsterdam | Amsterdam: Centraal Station Grand Café | 4 | 111 |
-| 1704 | Amsterdam | Amsterdam: Centraal Station Grand Café | 4 | 111 |
-| 1705 | Amsterdam | Amsterdam: Centraal Station Grand Café | 4 | 111 |
-| 1706 | Amsterdam | Amsterdam: Centraal Station Starbucks | 4 | 111 |
-| 1707 | Amsterdam | Amsterdam: Centraal Station Starbucks | 4 | 111 |
-| 1708 | Amsterdam | Amsterdam: Centraal Station | 4 | 111 |
-| 1709 | Amsterdam | Amsterdam: Centraal Station | 4 | 111 |
-| 1710 | Amsterdam | Amsterdam: Centraal Station | 4 | 111 |
-| 1711 | Amsterdam | Amsterdam: Centraal Station | 4 | 111 |
-| 1712 | Amsterdam | Amsterdam: Centraal Station | 4 | 111 |
+| 8178 | Amsterdam | Amsterdam. Amstel 41 (19e E) | 4 | 22 |
+| 8190 | Amsterdam | Amsterdam, Begijnhof (1574) | 4 | 22 |
+| 8189 | Amsterdam | Amsterdam, Begijnhof (1574) | 4 | 22 |
+| 2164 | Amsterdam | Amsterdam: Stationsgebouw | 4 | 22 |
+| 2163 | Amsterdam | Amsterdam: Prins Hendrikkade 22 | 4 | 22 |
+| 2162 | Amsterdam | Amsterdam: Prinsengracht 173 | 4 | 22 |
+| 2161 | Amsterdam | Amsterdam: Prinsengracht 173 | 4 | 22 |
+| 2160 | Amsterdam | Amsterdam: Prins Hendrikkade 21 (1883) | 4 | 22 |
+| 2159 | Amsterdam | Amsterdam: Prins Hendrikkade 21 (1883) | 4 | 22 |
+| 1701 | Amsterdam | Amsterdam: Centraal Station Grand Café | 4 | 22 |
+| 1700 | Amsterdam | Amsterdam: Centraal Station Grand Café | 4 | 22 |
+| 1702 | Amsterdam | Amsterdam: Centraal Station Grand Café | 4 | 22 |
+| 1703 | Amsterdam | Amsterdam: Centraal Station Grand Café | 4 | 22 |
+| 1704 | Amsterdam | Amsterdam: Centraal Station Grand Café | 4 | 22 |
+| 1705 | Amsterdam | Amsterdam: Centraal Station Grand Café | 4 | 22 |
+| 1706 | Amsterdam | Amsterdam: Centraal Station Starbucks | 4 | 22 |
+| 1707 | Amsterdam | Amsterdam: Centraal Station Starbucks | 4 | 22 |
+| 1708 | Amsterdam | Amsterdam: Centraal Station | 4 | 22 |
+| 1709 | Amsterdam | Amsterdam: Centraal Station | 4 | 22 |
+| 1710 | Amsterdam | Amsterdam: Centraal Station | 4 | 22 |
+| 1711 | Amsterdam | Amsterdam: Centraal Station | 4 | 22 |
+| 1712 | Amsterdam | Amsterdam: Centraal Station | 4 | 22 |

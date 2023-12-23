@@ -41,6 +41,10 @@ def create_pf_gallery_settings(image_ids, filter_ids) -> dict[str, str]:
         "bootstrap_disable": "no",
         "custom-css": "",
     }
+    serialized_settings = serialize_dictionary(pf_gallery_settings)
+    # Writing PHP array settings
+    with open("output/php_array_gallery_settings.txt", "w") as file:
+        file.write(serialized_settings)
     return pf_gallery_settings
 
 def serialize_dictionary(dictionary: dict[str, str]) -> str:
